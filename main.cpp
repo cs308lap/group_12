@@ -3,7 +3,8 @@
 using namespace std;
 int main(){
     print_hello();
-    printf("/n");
-    printf("The factorial of 5 is %d",factorial(5));
+    cout<< endl;
+    cout<<"The factorial of 5 is "<< factorial(5)<< endl;
+    cout<<"This is master"<<endl;
     return 0;
 }
