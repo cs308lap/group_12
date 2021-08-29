@@ -4,14 +4,12 @@ using namespace std;
 
 int gcd(int x, int y)
 {
-	int ans;
-	
-    //This statement is added to give rise to conflicts
-    for(int i=1; i<=min(x,y);i++){
-        if((x%i==0) && (y%i)==0){
-            ans=i;
-        }
-    }
+	if(x==0){
+        return y;
 
-	return ans;
+    }
+    if(y>x){
+        return gcd(x,y%x);
+    }
+    return gcd(y,x%y);
 }
