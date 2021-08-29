@@ -8,6 +8,7 @@ int main(){
     cout<<"This is master"<<endl;
     int x=56;
     int y=98;
+    //no change required to print because function definition is same
     cout<<"GCD of 56 & 98: "<<gcd(x,y)<<endl;
     return 0;
 }
